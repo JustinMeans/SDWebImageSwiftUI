@@ -112,7 +112,7 @@ struct ContentView: View {
             NavigationLink(destination: DetailView(url: url, animated: self.animated)) {
                 HStack {
                     if self.animated {
-                        #if os(macOS) || os(iOS) || os(tvOS)
+                        #if os(macOS) || os(iOS) || os(tvOS) || os(xrOS)
                         AnimatedImage(url: URL(string:url), isAnimating: .constant(true))
                         .onViewUpdate { view, context in
                         #if os(macOS)

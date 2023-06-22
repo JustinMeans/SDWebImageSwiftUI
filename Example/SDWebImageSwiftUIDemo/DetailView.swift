@@ -94,7 +94,7 @@ struct DetailView: View {
     func contentView() -> some View {
         HStack {
             if animated {
-                #if os(macOS) || os(iOS) || os(tvOS)
+                #if os(macOS) || os(iOS) || os(tvOS) || os(xrOS)
                 AnimatedImage(url: URL(string:url), options: [.progressiveLoad, .delayPlaceholder], isAnimating: $isAnimating)
                 .resizable()
                 .placeholder(.wifiExclamationmark)
