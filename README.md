@@ -590,7 +590,7 @@ class ViewController: UIViewController {
 }
 
 // ContentView.swift
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 struct ContentView : View {
     var body: some View {
         Group {
