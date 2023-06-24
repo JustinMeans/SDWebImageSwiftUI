@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "SDWebImage",
-        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "repositoryURL": "https://github.com/dreampiggy/SDWebImage.git",
         "state": {
-          "branch": null,
-          "revision": "3e48cb68d8e668d146dc59c73fb98cb628616236",
-          "version": "5.13.2"
+          "branch": "feature/visionOS",
+          "revision": "7d9709248933b26b9f7d56662073a01a82d41c33",
+          "version": null
         }
       }
     ]
