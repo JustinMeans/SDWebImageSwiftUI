@@ -29,11 +29,11 @@ public struct ProgressIndicator: PlatformViewRepresentable {
     
     #if os(macOS)
     public typealias NSViewType = ProgressIndicatorWrapper
-    #elseif os(iOS) || os(tvOS)
+    #elseif os(iOS) || os(tvOS) || os(visionOS)
     public typealias UIViewType = ProgressIndicatorWrapper
     #endif
     
-    #if os(iOS) || os(tvOS)
+    #if os(iOS) || os(tvOS) || os(visionOS)
     public func makeUIView(context: UIViewRepresentableContext<ProgressIndicator>) -> ProgressIndicatorWrapper {
         let progressStyle: UIProgressView.Style
         switch style {

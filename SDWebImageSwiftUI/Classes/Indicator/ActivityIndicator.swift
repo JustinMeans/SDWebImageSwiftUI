@@ -30,7 +30,7 @@ public struct ActivityIndicator: PlatformViewRepresentable {
     public typealias UIViewType = UIActivityIndicatorView
     #endif
     
-    #if os(iOS) || os(tvOS)
+    #if os(iOS) || os(tvOS) || os(visionOS)
     public func makeUIView(context: UIViewRepresentableContext<ActivityIndicator>) -> UIActivityIndicatorView {
         let activityStyle: UIActivityIndicatorView.Style
         switch style {
